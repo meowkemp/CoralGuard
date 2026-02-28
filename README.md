@@ -1,8 +1,10 @@
 Team Name: Fantastic Four
+________________________________________
 Project Name: Coral Guard
+________________________________________
 What is it for: AI-Powered Coral Reef Stress Assessment Using Google AI
+________________________________________
 Coral Guard is a Flutter-based web application that uses Google AI technologies to analyse coral reef images and simulate short-term reef stress conditions through a micro digital twin model.
-
 The system integrates Google Vision API and Google Gemini to provide intelligent reef health analysis and actionable environmental recommendations.
 ________________________________________
 SDG Alignment

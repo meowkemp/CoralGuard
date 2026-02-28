@@ -1,11 +1,11 @@
 ## 🪸 Coral Guard
 Team Name: Fantastic Four
-________________________________________
+---
 ## 🌊 Project Overview
 
 Coral Guard is an AI-powered web application that analyzes coral reef images and simulates short-term reef stress conditions using a micro digital twin approach.
 The system integrates Google Cloud Vision API and Google Gemini to provide intelligent reef health assessments and actionable environmental conservation recommendations.
-________________________________________
+---
 ## ✨ Key Features
 
 - AI-powered coral reef image analysis  
@@ -13,15 +13,16 @@ ________________________________________
 - Automated reef health score generation  
 - Actionable conservation recommendations  
 - Modular and scalable full-stack architecture
-________________________________________
+---
 ## 🎯 SDG Alignment
 
 This project aligns with:
+
 SDG 13 – Climate Action
 SDG 14 – Life Below Water
 
 Coral Guard helps monitor coral reef stress caused by rising sea temperatures and environmental changes, enabling faster and more accessible environmental assessment.
-________________________________________
+---
 ## 🤖 Google Technologies Used
 1.	Google AI Technologies
 •	Google Gemini (via Google AI Studio)
@@ -30,7 +31,7 @@ ________________________________________
 •	Flutter Web
 •	FastAPI (Backend API)
 •	Firebase (optional hosting configuration ready)
-________________________________________
+---
 ## 🧠 Why AI?
 
 Coral reef stress analysis is contextual and multi-factor dependent.
@@ -40,7 +41,7 @@ By integrating Google Vision API and Gemini, Coral Guard:
 - Automates reef inspection
 - Provides contextual environmental reasoning
 - Generates adaptive conservation recommendations
-________________________________________
+---
 ## 🏗 System Architecture
 User
 ↓
@@ -55,7 +56,7 @@ Google Gemini → Interpret & Generate Recommendations
 Backend formats response
 ↓
 Flutter displays health assessment
-________________________________________
+---
 ## 📸 Application Preview
 
 ### Home Interface
@@ -64,7 +65,7 @@ ________________________________________
 ### AI Result Display
 <img width="960" height="791" alt="image" src="https://github.com/user-attachments/assets/26da8baa-20e3-4380-b958-5f61a2df24a4" />
 
-________________________________________
+---
 ##  📁 Project Structure
 
 ```
@@ -83,7 +84,7 @@ root/
 ├── .gitignore
 └── README.md
 ```
-________________________________________
+---
 ## ⚙️ Prerequisites
 Make sure you have installed:
 •	Python 3.9+
@@ -91,14 +92,14 @@ Make sure you have installed:
 •	Git
 •	Google Cloud credentials (Vision API)
 •	Gemini API Key (Google AI Studio)
-________________________________________
+---
 ## 🚀 Step-by-Step Setup Guide 
 1.	Backend Setup (FastAPI)
 Step 1: Navigate to backend folder
 ```
 cd backend
 ```
-________________________________________
+---
 Step 2: Create Visual Environment
 Windows:
 ```
@@ -111,14 +112,14 @@ Mac/Linux:
 python3 -m venv venv
 source venv/bin/activate
 ```
-________________________________________
+---
 Step 3: Install Dependencies
 ```
 pip install -r requirements.txt
 ```
 If requirements.txt encoding causes issues, reinstall manually:
 pip install fastapi uvicorn python-dotenv google-cloud-vision google-generativeai
-________________________________________
+---
 Step 4: Configure Environment Variables
 Create a file named:
 ```
@@ -128,7 +129,7 @@ Add:
 ```
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
-________________________________________
+---
 Step 5: Set Google Vision Credentials
 Download your Google Cloud Vision service account JSON file.
 Set environment variable:
@@ -142,7 +143,7 @@ Mac/Linux:
 ```
 export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service-account.json"
 ```
-________________________________________
+---
 Step 6: Run Backend Server
 ```
 uvicorn main:app --reload
@@ -155,25 +156,25 @@ Test endpoint at:
 ```
 http://127.0.0.1:8000/docs
 ```
-________________________________________
+---
 2.	Frontend Setup (Flutter Web)
 Step 1: Navigate to Flutter folder
 Open a new terminal:
 ```
 cd coralguard
 ```
-________________________________________
+---
 Step 2: Get Dependencies
 ```
 flutter pub get
 ```
-________________________________________
+---
 Step 3: Run Flutter Web
 ```
 flutter run -d chrome - -release
 ```
 The app will open in browser.
-________________________________________
+---
 ## 🔄_How the Full System Works_
 1.	User uploads coral reef image
 2.	User sets water temperature
@@ -185,7 +186,7 @@ ________________________________________
 	Generates health analysis & recommendations
 5.	Backend returns structured JSON
 6.	Flutter displays assessment card
-________________________________________
+---
 ## 🌐 API Endpoint
 
 ### POST `/analyze`
@@ -206,7 +207,7 @@ ________________________________________
   ]
 }
 ```
-________________________________________
+---
 🧪 Testing the Application
 1.	Start backend
 2.	Start Flutter frontend
@@ -214,27 +215,27 @@ ________________________________________
 4.	Adjust temperature slider
 5.	Click Analyze
 6.	View AI-generated results
-________________________________________
+---
 🛠 Troubleshooting
 ❌ CORS Error
 Ensure FastAPI has CORS middleware enabled.
-________________________________________
+---
 ❌ Gemini API Error
 Check:
 •	Correct API key
 •	.env file exists
 •	Internet connection active
-________________________________________
+---
 ❌ Vision API Error
 Check:
 •	Service account JSON path correct
 •	Google Cloud project has Vision API enabled
-________________________________________
+---
 🔐 Security Notes
 •	Never upload .env to GitHub
 •	Never upload service-account JSON
 •	Use .gitignore properly
-________________________________________
+---
 ## ☁ Deployment Readiness
 
 The system is cloud-ready and can be deployed using:
@@ -244,14 +245,14 @@ The system is cloud-ready and can be deployed using:
 - Firestore for storing analysis history
 
 The modular architecture supports horizontal scaling and future AI model integration.
-________________________________________
+---
 ## Future Improvements
 -	Deploy backend on Google Cloud Run
 -	Deploy frontend via Firebase Hosting
 -	Store analysis history in Firestore
 -	Improve digital twin simulation accuracy
 -	Add real-time reef monitoring dashboard
-________________________________________
+---
 ## Technical Architecture
 
 Coral Guard follows a modular full-stack architecture:
@@ -274,7 +275,6 @@ User → Flutter → FastAPI → Vision API → Gemini → Backend → Frontend.
 This separation of concerns ensures scalability, maintainability, and cloud readiness.
 
 ---
-________________________________________
 ## Implementation Details
 
 - Built frontend using **Flutter Web** with structured UI components.
@@ -286,7 +286,6 @@ ________________________________________
 - Designed a simplified micro digital twin logic to simulate reef stress conditions based on temperature and visual indicators.
 
 ---
-________________________________________
 ## Challenges Faced
 
 - Handling image upload and multipart data transfer between Flutter and FastAPI.
@@ -298,8 +297,7 @@ ________________________________________
 These challenges were resolved through iterative testing, prompt refinement, and modular architecture adjustments.
 
 ---
-________________________________________
-## 4️⃣ Future Roadmap
+## Future Roadmap
 
 - Deploy backend on Google Cloud Run.
 - Deploy frontend via Firebase Hosting.
@@ -309,7 +307,7 @@ ________________________________________
 - Improve AI accuracy through dataset expansion and tuning.
 
 The modular architecture allows seamless scaling and integration of additional AI services in the future.
-________________________________________
+---
 ## Contributors
 Backend & AI Integration:
 1.	Kishanea A/L Jeyakumar
@@ -318,11 +316,10 @@ Backend & AI Integration:
 
 Frontend Development:
 1.	Ng Guan Yik
-
-________________________________________
+---
 ## Demo Video
 YouTube Link: 
-________________________________________
+---
 ## License
 This project was developed for KitaHack 2026 and educational purposes.
-________________________________________
+---

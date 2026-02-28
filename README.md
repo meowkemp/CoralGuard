@@ -1,10 +1,12 @@
 ## 🪸 Coral Guard
 Team Name: Fantastic Four
+
 ---
 ## 🌊 Project Overview
 
 Coral Guard is an AI-powered web application that analyzes coral reef images and simulates short-term reef stress conditions using a micro digital twin approach.
 The system integrates Google Cloud Vision API and Google Gemini to provide intelligent reef health assessments and actionable environmental conservation recommendations.
+
 ---
 ## ✨ Key Features
 
@@ -13,6 +15,7 @@ The system integrates Google Cloud Vision API and Google Gemini to provide intel
 - Automated reef health score generation  
 - Actionable conservation recommendations  
 - Modular and scalable full-stack architecture
+
 ---
 ## 🎯 SDG Alignment
 
@@ -22,6 +25,7 @@ SDG 13 – Climate Action
 SDG 14 – Life Below Water
 
 Coral Guard helps monitor coral reef stress caused by rising sea temperatures and environmental changes, enabling faster and more accessible environmental assessment.
+
 ---
 ## 🤖 Google Technologies Used
 1.	Google AI Technologies
@@ -56,6 +60,7 @@ Google Gemini → Interpret & Generate Recommendations
 Backend formats response
 ↓
 Flutter displays health assessment
+
 ---
 ## 📸 Application Preview
 
@@ -92,6 +97,7 @@ Make sure you have installed:
 •	Git
 •	Google Cloud credentials (Vision API)
 •	Gemini API Key (Google AI Studio)
+
 ---
 ## 🚀 Step-by-Step Setup Guide 
 1.	Backend Setup (FastAPI)
@@ -119,6 +125,7 @@ pip install -r requirements.txt
 ```
 If requirements.txt encoding causes issues, reinstall manually:
 pip install fastapi uvicorn python-dotenv google-cloud-vision google-generativeai
+
 ---
 Step 4: Configure Environment Variables
 Create a file named:
@@ -217,24 +224,30 @@ The app will open in browser.
 6.	View AI-generated results
 ---
 🛠 Troubleshooting
+
 ❌ CORS Error
 Ensure FastAPI has CORS middleware enabled.
+
 ---
+
 ❌ Gemini API Error
 Check:
 •	Correct API key
 •	.env file exists
 •	Internet connection active
+
 ---
 ❌ Vision API Error
 Check:
 •	Service account JSON path correct
 •	Google Cloud project has Vision API enabled
+
 ---
 🔐 Security Notes
 •	Never upload .env to GitHub
 •	Never upload service-account JSON
 •	Use .gitignore properly
+
 ---
 ## ☁ Deployment Readiness
 
@@ -245,6 +258,7 @@ The system is cloud-ready and can be deployed using:
 - Firestore for storing analysis history
 
 The modular architecture supports horizontal scaling and future AI model integration.
+
 ---
 ## Future Improvements
 -	Deploy backend on Google Cloud Run
@@ -319,7 +333,9 @@ Frontend Development:
 ---
 ## Demo Video
 YouTube Link: 
+
 ---
 ## License
 This project was developed for KitaHack 2026 and educational purposes.
+
 ---

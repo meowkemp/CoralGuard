@@ -185,7 +185,8 @@ Future Improvements
 -	Store analysis history in Firestore
 -	Improve digital twin simulation accuracy
 -	Add real-time reef monitoring dashboard
-________________________________________Contributors
+________________________________________
+Contributors
 Backend & AI Integration:
 1.	Kishanea A/L Jeyakumar
 2.	Liew Jia Xin

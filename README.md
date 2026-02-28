@@ -1,12 +1,20 @@
-🪸 Coral Guard
+## 🪸 Coral Guard
 Team Name: Fantastic Four
 ________________________________________
-🌊 Project Overview
+## 🌊 Project Overview
 
 Coral Guard is an AI-powered web application that analyzes coral reef images and simulates short-term reef stress conditions using a micro digital twin approach.
 The system integrates Google Cloud Vision API and Google Gemini to provide intelligent reef health assessments and actionable environmental conservation recommendations.
 ________________________________________
-🎯 SDG Alignment
+## ✨ Key Features
+
+- AI-powered coral reef image analysis  
+- Temperature-based reef stress simulation  
+- Automated reef health score generation  
+- Actionable conservation recommendations  
+- Modular and scalable full-stack architecture
+________________________________________
+## 🎯 SDG Alignment
 
 This project aligns with:
 SDG 13 – Climate Action
@@ -14,7 +22,7 @@ SDG 14 – Life Below Water
 
 Coral Guard helps monitor coral reef stress caused by rising sea temperatures and environmental changes, enabling faster and more accessible environmental assessment.
 ________________________________________
-🤖 Google Technologies Used
+## 🤖 Google Technologies Used
 1.	Google AI Technologies
 •	Google Gemini (via Google AI Studio)
 •	Google Cloud Vision API
@@ -23,7 +31,17 @@ ________________________________________
 •	FastAPI (Backend API)
 •	Firebase (optional hosting configuration ready)
 ________________________________________
-🏗 System Architecture
+## 🧠 Why AI?
+
+Coral reef stress analysis is contextual and multi-factor dependent.
+Traditional rule-based systems cannot dynamically interpret visual reef indicators and environmental conditions together.
+
+By integrating Google Vision API and Gemini, Coral Guard:
+- Automates reef inspection
+- Provides contextual environmental reasoning
+- Generates adaptive conservation recommendations
+________________________________________
+## 🏗 System Architecture
 User
 ↓
 Flutter Web (Image Upload + Temperature Input)
@@ -37,6 +55,15 @@ Google Gemini → Interpret & Generate Recommendations
 Backend formats response
 ↓
 Flutter displays health assessment
+________________________________________
+## 📸 Application Preview
+
+### Home Interface
+<img width="1919" height="906" alt="image" src="https://github.com/user-attachments/assets/3ac761c0-1c4b-4078-89d6-dce925f36ddf" />
+
+### AI Result Display
+<img width="960" height="791" alt="image" src="https://github.com/user-attachments/assets/26da8baa-20e3-4380-b958-5f61a2df24a4" />
+
 ________________________________________
 ##  📁 Project Structure
 
@@ -57,7 +84,7 @@ root/
 └── README.md
 ```
 ________________________________________
-⚙️ Prerequisites
+## ⚙️ Prerequisites
 Make sure you have installed:
 •	Python 3.9+
 •	Flutter SDK (3.x recommended)
@@ -65,7 +92,7 @@ Make sure you have installed:
 •	Google Cloud credentials (Vision API)
 •	Gemini API Key (Google AI Studio)
 ________________________________________
-🚀 Step-by-Step Setup Guide 
+## 🚀 Step-by-Step Setup Guide 
 1.	Backend Setup (FastAPI)
 Step 1: Navigate to backend folder
 ```
@@ -147,7 +174,7 @@ flutter run -d chrome - -release
 ```
 The app will open in browser.
 ________________________________________
-🔄_How the Full System Works_
+## 🔄_How the Full System Works_
 1.	User uploads coral reef image
 2.	User sets water temperature
 3.	Flutter sends POST request to backend
@@ -208,14 +235,24 @@ ________________________________________
 •	Never upload service-account JSON
 •	Use .gitignore properly
 ________________________________________
-Future Improvements
+## ☁ Deployment Readiness
+
+The system is cloud-ready and can be deployed using:
+
+- Firebase Hosting (Frontend)
+- Google Cloud Run (Backend)
+- Firestore for storing analysis history
+
+The modular architecture supports horizontal scaling and future AI model integration.
+________________________________________
+## Future Improvements
 -	Deploy backend on Google Cloud Run
 -	Deploy frontend via Firebase Hosting
 -	Store analysis history in Firestore
 -	Improve digital twin simulation accuracy
 -	Add real-time reef monitoring dashboard
 ________________________________________
-Contributors
+## Contributors
 Backend & AI Integration:
 1.	Kishanea A/L Jeyakumar
 2.	Liew Jia Xin
@@ -225,9 +262,9 @@ Frontend Development:
 1.	Ng Guan Yik
 
 ________________________________________
-Demo Video
+## Demo Video
 YouTube Link: 
 ________________________________________
-License
+## License
 This project was developed for KitaHack 2026 and educational purposes.
 ________________________________________

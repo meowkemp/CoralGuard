@@ -332,7 +332,7 @@ Frontend Development:
 1.	Ng Guan Yik
 ---
 ## Demo Video
-YouTube Link: 
+YouTube Link: https://youtu.be/LTsGcu9D9Ak
 
 ---
 ## License

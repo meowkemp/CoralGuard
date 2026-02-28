@@ -252,6 +252,64 @@ ________________________________________
 -	Improve digital twin simulation accuracy
 -	Add real-time reef monitoring dashboard
 ________________________________________
+## Technical Architecture
+
+Coral Guard follows a modular full-stack architecture:
+
+- **Frontend (Flutter Web)**  
+  Handles user interaction including image upload and temperature input.
+
+- **Backend (FastAPI)**  
+  Manages API orchestration, request validation, AI integration, and response formatting.
+
+- **Google Cloud Vision API**  
+  Extracts structured visual features from coral reef images.
+
+- **Google Gemini (AI Studio)**  
+  Performs contextual reef stress reasoning and generates conservation recommendations.
+
+The system follows a clear data flow:
+User → Flutter → FastAPI → Vision API → Gemini → Backend → Frontend.
+
+This separation of concerns ensures scalability, maintainability, and cloud readiness.
+
+---
+________________________________________
+## Implementation Details
+
+- Built frontend using **Flutter Web** with structured UI components.
+- Developed backend using **FastAPI** with RESTful endpoint `/analyze`.
+- Integrated **Google Vision API** for image feature extraction.
+- Integrated **Google Gemini** for contextual AI reasoning.
+- Implemented structured JSON response model for health score and recommendations.
+- Applied secure API key handling using environment variables.
+- Designed a simplified micro digital twin logic to simulate reef stress conditions based on temperature and visual indicators.
+
+---
+________________________________________
+## Challenges Faced
+
+- Handling image upload and multipart data transfer between Flutter and FastAPI.
+- Managing API key security and environment variable configuration.
+- Ensuring Vision API outputs were structured properly for Gemini input.
+- Designing effective AI prompts to generate meaningful and actionable conservation recommendations.
+- Improving UI clarity based on user feedback to reduce text-heavy output.
+
+These challenges were resolved through iterative testing, prompt refinement, and modular architecture adjustments.
+
+---
+________________________________________
+## 4️⃣ Future Roadmap
+
+- Deploy backend on Google Cloud Run.
+- Deploy frontend via Firebase Hosting.
+- Integrate Firestore to store historical reef assessments.
+- Connect to real-time ocean temperature APIs.
+- Enhance digital twin modeling with predictive analytics.
+- Improve AI accuracy through dataset expansion and tuning.
+
+The modular architecture allows seamless scaling and integration of additional AI services in the future.
+________________________________________
 ## Contributors
 Backend & AI Integration:
 1.	Kishanea A/L Jeyakumar

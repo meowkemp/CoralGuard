@@ -1,19 +1,20 @@
+🪸 Coral Guard
 Team Name: Fantastic Four
 ________________________________________
-Project Name: Coral Guard
+🌊 Project Overview
+
+Coral Guard is an AI-powered web application that analyzes coral reef images and simulates short-term reef stress conditions using a micro digital twin approach.
+The system integrates Google Cloud Vision API and Google Gemini to provide intelligent reef health assessments and actionable environmental conservation recommendations.
 ________________________________________
-What is it for: AI-Powered Coral Reef Stress Assessment Using Google AI
-________________________________________
-Coral Guard is a Flutter-based web application that uses Google AI technologies to analyse coral reef images and simulate short-term reef stress conditions through a micro digital twin model.
-The system integrates Google Vision API and Google Gemini to provide intelligent reef health analysis and actionable environmental recommendations.
-________________________________________
-SDG Alignment
+🎯 SDG Alignment
+
 This project aligns with:
 SDG 13 – Climate Action
 SDG 14 – Life Below Water
-Coral Guard helps monitor coral reef stress caused by rising sea temperatures and environmental changes.
+
+Coral Guard helps monitor coral reef stress caused by rising sea temperatures and environmental changes, enabling faster and more accessible environmental assessment.
 ________________________________________
-Google Technologies Used
+🤖 Google Technologies Used
 1.	Google AI Technologies
 •	Google Gemini (via Google AI Studio)
 •	Google Cloud Vision API
@@ -22,7 +23,7 @@ Google Technologies Used
 •	FastAPI (Backend API)
 •	Firebase (optional hosting configuration ready)
 ________________________________________
-System Architecture
+🏗 System Architecture
 User
 ↓
 Flutter Web (Image Upload + Temperature Input)
@@ -37,7 +38,7 @@ Backend formats response
 ↓
 Flutter displays health assessment
 ________________________________________
-##  Project Structure
+##  📁 Project Structure
 
 ```
 root/
@@ -45,16 +46,18 @@ root/
 ├── backend/                # FastAPI backend server
 │   ├── main.py
 │   ├── requirements.txt
-│   └── .env (NOT uploaded to GitHub)
+│   └── .env (excluded via .gitignore)
 │
 ├── coralguard/             # Flutter Web frontend
 │   ├── lib/
 │   ├── web/
 │   ├── pubspec.yaml
-│   └── README.md
+│
+├── .gitignore
+└── README.md
 ```
 ________________________________________
-Prerequisites
+⚙️ Prerequisites
 Make sure you have installed:
 •	Python 3.9+
 •	Flutter SDK (3.x recommended)
@@ -65,7 +68,9 @@ ________________________________________
 Step-by-Step Setup Guide 
 1.	Backend Setup (FastAPI)
 Step 1: Navigate to backend folder
+```
 cd backend
+```
 ________________________________________
 Step 2: Create Visual Environment
 Windows:

@@ -65,7 +65,7 @@ Make sure you have installed:
 •	Google Cloud credentials (Vision API)
 •	Gemini API Key (Google AI Studio)
 ________________________________________
-Step-by-Step Setup Guide 
+🚀 Step-by-Step Setup Guide 
 1.	Backend Setup (FastAPI)
 Step 1: Navigate to backend folder
 ```
@@ -74,61 +74,80 @@ cd backend
 ________________________________________
 Step 2: Create Visual Environment
 Windows:
+```
 python -m venv venv
 venv\Scripts\activate
+```
 OR
 Mac/Linux:
+```
 python3 -m venv venv
 source venv/bin/activate
+```
 ________________________________________
 Step 3: Install Dependencies
+```
 pip install -r requirements.txt
-
+```
 If requirements.txt encoding causes issues, reinstall manually:
 pip install fastapi uvicorn python-dotenv google-cloud-vision google-generativeai
 ________________________________________
 Step 4: Configure Environment Variables
 Create a file named:
+```
 .env
-
+```
 Add:
+```
 GEMINI_API_KEY=your_gemini_api_key_here
+```
 ________________________________________
 Step 5: Set Google Vision Credentials
 Download your Google Cloud Vision service account JSON file.
 Set environment variable:
 
 Windows:
+```
 set GOOGLE_APPLICATION_CREDENTIALS=path\to\your\service-account.json
-
+```
 OR
-
 Mac/Linux:
+```
 export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service-account.json"
+```
 ________________________________________
 Step 6: Run Backend Server
+```
 uvicorn main:app --reload
-
+```
 Server should run at:
+```
 http://127.0.0.1:8000
-
+```
 Test endpoint at:
+```
 http://127.0.0.1:8000/docs
+```
 ________________________________________
 2.	Frontend Setup (Flutter Web)
 Step 1: Navigate to Flutter folder
 Open a new terminal:
+```
 cd coralguard
+```
 ________________________________________
 Step 2: Get Dependencies
+```
 flutter pub get
+```
 ________________________________________
 Step 3: Run Flutter Web
+```
 flutter run -d chrome - -release
-
+```
 The app will open in browser.
 ________________________________________
-_How the Full System Works_
+🔄_How the Full System Works_
 1.	User uploads coral reef image
 2.	User sets water temperature
 3.	Flutter sends POST request to backend
@@ -140,7 +159,7 @@ _How the Full System Works_
 5.	Backend returns structured JSON
 6.	Flutter displays assessment card
 ________________________________________
-## API Endpoint
+## 🌐 API Endpoint
 
 ### POST `/analyze`
 
@@ -161,7 +180,7 @@ ________________________________________
 }
 ```
 ________________________________________
-Testing the Application
+🧪 Testing the Application
 1.	Start backend
 2.	Start Flutter frontend
 3.	Upload any coral reef image
@@ -169,7 +188,7 @@ Testing the Application
 5.	Click Analyze
 6.	View AI-generated results
 ________________________________________
-Troubleshooting
+🛠 Troubleshooting
 ❌ CORS Error
 Ensure FastAPI has CORS middleware enabled.
 ________________________________________
@@ -184,7 +203,7 @@ Check:
 •	Service account JSON path correct
 •	Google Cloud project has Vision API enabled
 ________________________________________
-Security Notes
+🔐 Security Notes
 •	Never upload .env to GitHub
 •	Never upload service-account JSON
 •	Use .gitignore properly

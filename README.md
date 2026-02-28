@@ -37,20 +37,22 @@ Backend formats response
 ↓
 Flutter displays health assessment
 ________________________________________
-Project Structure 
+##  Project Structure
+
+```
 root/
 │
-├── backend/              # FastAPI backend server
+├── backend/                # FastAPI backend server
 │   ├── main.py
 │   ├── requirements.txt
 │   └── .env (NOT uploaded to GitHub)
 │
-├── coralguard/           # Flutter Web frontend
+├── coralguard/             # Flutter Web frontend
 │   ├── lib/
 │   ├── web/
-│   └── pubspec.yaml
-│
-└── README.md
+│   ├── pubspec.yaml
+│   └── README.md
+```
 ________________________________________
 Prerequisites
 Make sure you have installed:
@@ -133,23 +135,26 @@ _How the Full System Works_
 5.	Backend returns structured JSON
 6.	Flutter displays assessment card
 ________________________________________
-API Endpoint
-POST /analyze
+## API Endpoint
 
-Request:
-•	Image file
-•	Temperature value
+### POST `/analyze`
 
-Response:
+### Request
+- Image file (multipart/form-data)
+- Temperature value (float)
+
+### Response
+```json
 {
   "health_score": 78,
   "action": "Coral reef shows mild stress due to elevated temperature.",
   "recommendations": [
-"Monitor water temperature closely",
+    "Monitor water temperature closely",
     "Reduce local pollution impact",
     "Implement reef shading techniques"
   ]
 }
+```
 ________________________________________
 Testing the Application
 1.	Start backend
